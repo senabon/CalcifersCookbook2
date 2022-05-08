@@ -1,0 +1,28 @@
+
+    <link rel = "stylesheet" type="text/css" href="ejsStyle.css"/>
+<body>
+    <h1>
+    Ghibli Recipes
+    
+    </h1>
+    
+    
+    <% stuff.forEach(i =>{ %>
+        <div>
+                <div id="title"><%=i.recipe %></div>
+                <img src="<%=i.img %>" height="300"/><br><br>
+                <%=i.ingredients %><br><br>
+                <%=i.directions %><br><br>
+    
+                <a class="button submit" href="/<%=i.id %>">Edit</a>
+    
+                <form action="/<%=i.id %>/?_method=DELETE" method="POST" class="delete">
+                    <input type="submit" value="Delete" class="delete-button"/>
+                </form><br><br>
+        </div>
+    
+    <% }) %>
+    
+    <a href="/new">Add Your Own</a>
+    
+    </body>

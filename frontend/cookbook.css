@@ -1,0 +1,13 @@
+
+body{
+    background-image: url("calciferCookbook.jpg");
+    background-size:cover;
+}
+
+#enterButton{
+    border-radius: 8px;
+    margin-top: 200%;
+    margin-left: 55%;
+    margin-right: 50%;
+    font-size: 50px;
+}

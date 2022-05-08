@@ -1,0 +1,42 @@
+<link rel = "stylesheet" type="css" href="ejsStyle.css"/>
+
+<hi>Edit Recipes</hi>
+
+<form class="rec" action="/<%=id%>/?_method=PUT" method="POST">
+
+
+
+<div>
+    <label for="picture"></label>
+</div>
+
+
+<div>
+    <label for="recipeTitle">Recipe:</label><br>
+    <input type="text" id="recipeTitle" name="recipeTitle" class="form-control" value="<%=recipe%>"/>
+</div>
+
+<div>
+
+    <label for="ingredients">Ingredients:</label><br>
+    <textarea id="ingredients" name="ingredients" class="form-control" rows="6" cols="30">
+        <%=ingredients%>
+    </textarea>
+</div>
+
+
+<div>
+
+    <label for="directions">Directions:</label><br>
+    <textarea id="directions" name="directions" class="form-control" rows="20" cols="30">
+        <%=directions%>
+    </textarea>
+</div>
+
+
+<input type="submit" class=" button back-to-index" value="Edit">
+<a type="submit" href="/" class="btn">Go Back</a>
+
+
+
+</form>
