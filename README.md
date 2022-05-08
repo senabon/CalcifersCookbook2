@@ -46,4 +46,9 @@ Stretch Goals
 
 # Bugs
 
+- Directions are set as an array instead of one long string
+
+- Some of the gifs were blocked after I added them (I could possibly reconfigure the .JSON to a JS file so I can can pull images from another folder)
+
+- My app broke so many times
 
